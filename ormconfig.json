@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5433,
+  "username": "postgres",
+  "password": "docker",
+  "database": "ms_clients",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+     "src/app/Models/*.ts"
+  ],
+  "migrations": ["src/Database/migrations/*.ts"],
+  "cli": {
+     "migrationsDir": "src/Database/migrations"
+  }
+}
